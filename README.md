@@ -13,7 +13,7 @@ This project involves building an ETL (Extract, Transform, Load) pipeline for LE
 The source database follows a **Third Normal Form (3NF)** relational database model with these characteristics:
 - Proper normalization to minimize redundancy
 - Clearly defined primary and foreign key relationships
-- Parent-child hierarchical relationships (e.g., Themes with self-referencing parent_id)
+- Parent-child hierarchical relationships (Themes with self-referencing parent_id)
 - Junction tables for many-to-many relationships (inventory_parts, inventory_sets, inventory_minifigs)
 - Referential integrity through foreign key constraints
 
