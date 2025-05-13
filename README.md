@@ -4,7 +4,7 @@
 This project involves building an ETL (Extract, Transform, Load) pipeline for LEGO Rebrickable data with the following components:
 
 1. **Source Database**: Creating tables from CSV files with proper relationships
-2. **Data Warehouse**: Building a small data mart with fact and dimension tables and populating it.
+2. **Data Warehouse**: Building a small data mart with fact and dimension tables and populating it
 3. **Scheduled Procedure**: Creating and scheduling a stored procedure for reporting
 
 ## Architecture
