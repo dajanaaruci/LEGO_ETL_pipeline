@@ -114,7 +114,7 @@ All required datasets can be downloaded from the official Rebrickable website:
 This project includes the following file types:
 
 1. **T-SQL Scripts**:
-   - Database schema creation with constraints and referential integrity rules
+   - Database schema creation with constraints and referential integrity rules and explanations step by step
    - Foreign key relationship definitions
    - Stored procedure implementation
    - SQL Agent job configuration
