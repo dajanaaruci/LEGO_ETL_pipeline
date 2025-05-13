@@ -132,8 +132,7 @@ This project includes the following file types:
    - Input: 12 CSV files from Rebrickable
    - Output: Database backup files for both source database and data warehouse
    - Report results from the stored procedure execution
-   - Backup of both databases being created locally
-
+   - Database Diagrams reflecting expected logic
 These files collectively implement the complete ETL pipeline from source data to analytical reporting.
 
 ## Differences Between Fact and Dimension Tables 🧩
