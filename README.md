@@ -128,7 +128,7 @@ This project includes the following file types:
    - Phased Approach: Separate scripts for table creation, data insertion, and constraint addition
 
 4. **Input/Output Files**:
-   - Input: 12 CSV files from Rebrickable (note: inventory_parts exceeds 100MB)
+   - Input: 12 CSV files from Rebrickable
    - Output: Database backup files for both source database and data warehouse
    - Report results from the stored procedure execution
    - Backup of both databases being created locally
