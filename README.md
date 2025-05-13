@@ -13,19 +13,11 @@ This project involves building an ETL (Extract, Transform, Load) pipeline for LE
 The source database follows a **Third Normal Form (3NF)** relational database model with these characteristics:
 - Proper normalization to minimize redundancy
 - Clearly defined primary and foreign key relationships
-<<<<<<< HEAD
-- Parent-child hierarchical relationships (Themes with self-referencing parent_id)
-- Junction tables for many-to-many relationships (inventory_parts, inventory_sets, inventory_minifigs)
-- Referential integrity through foreign key constraints
-
-This represents a typical OLTP (Online Transaction Processing) database architecture designed for operational data storage rather than analytics.
-=======
 - Parent-child hierarchical relationships ( Themes with self-referencing parent_id)
 - Junction tables for many-to-many relationships (inventory_parts, inventory_sets, inventory_minifigs)
 - Referential integrity through foreign key constraints
 
 This represents a typical OLTP (Online Transaction Processing) database architecture for operational data storage rather than analytics.
->>>>>>> 0ded7a9514613d71b254114bb5b9b89b2007523d
 
 ### Data Warehouse Architecture
 The data warehouse follows a **star schema** with:
@@ -60,22 +52,14 @@ Together, these form a **two-tier data architecture** with:
 ```
 ┌─────────────┐     ┌─────────────┐     ┌─────────────────────┐
 │             │     │             │     │                     │
-<<<<<<< HEAD
-│  CSV Files  │───▶│  SQL Server  │ ──▶│  Data Warehouse     │
-=======
 │  CSV Files  │────▶│  SQL Server │───▶│  Data Warehouse     │
->>>>>>> 0ded7a9514613d71b254114bb5b9b89b2007523d
 │             │     │  Database   │     │  (Star Schema)      │
 └─────────────┘     └─────────────┘     └─────────────────────┘
        │                   │                      │
        │                   │                      │
        ▼                   ▼                      ▼
 ┌─────────────┐     ┌─────────────┐     ┌─────────────────────┐
-<<<<<<< HEAD
-│ Extraction  │     │Transformation│    │       Loading       │
-=======
 │ Extraction  │     │Transformation│    │      Loading        │
->>>>>>> 0ded7a9514613d71b254114bb5b9b89b2007523d
 └─────────────┘     └─────────────┘     └─────────────────────┘
 ```
 
@@ -139,24 +123,15 @@ This project includes the following file types:
    - ETL transformation logic
    - Python code for database interaction
 
-<<<<<<< HEAD
-3. **ETL Loading Scripts Approaches Used**:
-=======
 3. **ETL Loading Approaches Used**:
->>>>>>> 0ded7a9514613d71b254114bb5b9b89b2007523d
    - Direct Approach: Combined table creation and data insertion scripts
    - Phased Approach: Separate scripts for table creation, data insertion, and constraint addition
 
 4. **Input/Output Files**:
    - Input: 12 CSV files from Rebrickable (note: inventory_parts exceeds 100MB)
-<<<<<<< HEAD
-   - Output: Database diagrams for both the source database and the small data warehouse, to reflect that the architecture and logic have been implemented and preserved.
-   - Report results from the stored procedure execution
-=======
    - Output: Database backup files for both source database and data warehouse
    - Report results from the stored procedure execution
    - Backup of both databases being created locally
->>>>>>> 0ded7a9514613d71b254114bb5b9b89b2007523d
 
 These files collectively implement the complete ETL pipeline from source data to analytical reporting.
 
