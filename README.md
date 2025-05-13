@@ -1,13 +1,14 @@
-# LEGO Rebrickable ETL Pipeline
+# LEGO Rebrickable ETL Pipeline 🧱
 
-## Overview
+## Overview 🧩
+
 This project involves building an ETL (Extract, Transform, Load) pipeline for LEGO Rebrickable data with the following components:
 
 1. **Source Database**: Creating tables from CSV files with proper relationships
 2. **Data Warehouse**: Building a small data mart with fact and dimension tables and populating it
 3. **Scheduled Procedure**: Creating and scheduling a stored procedure for reporting
 
-## Architecture
+## Architecture 🧱
 
 ### Source Database Architecture
 The source database follows a **Third Normal Form (3NF)** relational database model with these characteristics:
@@ -19,7 +20,7 @@ The source database follows a **Third Normal Form (3NF)** relational database mo
 
 This represents a typical OLTP (Online Transaction Processing) database architecture for operational data storage rather than analytics.
 
-### Data Warehouse Architecture
+### Data Warehouse Architecture 🧩
 The data warehouse follows a **star schema** with:
 
 #### Fact Table
@@ -46,7 +47,7 @@ Together, these form a **two-tier data architecture** with:
 1. A normalized operational database (shown in the ERD)
 2. A denormalized analytical data mart (the star schema)
 
-## Project Architecture Diagrams
+## Project Architecture Diagrams 🧱
 
 ### ETL Pipeline Flow
 ```
@@ -63,7 +64,7 @@ Together, these form a **two-tier data architecture** with:
 └─────────────┘     └─────────────┘     └─────────────────────┘
 ```
 
-### Star Schema Design
+### Star Schema Design 🧩
 ```
                 ┌───────────────┐
                 │  Dim_Color    │
@@ -89,10 +90,10 @@ Together, these form a **two-tier data architecture** with:
                                 └───────────────┘
 ```
 
-## About LEGO Rebrickable Data
+## About LEGO Rebrickable Data 🧱
 The Rebrickable dataset contains comprehensive information about LEGO sets, parts, and their relationships. It includes 12 CSV files with data on colors, parts, sets, themes, minifigures, and inventories.
 
-### Dataset Download
+### Dataset Download 🧩
 All required datasets can be downloaded from the official Rebrickable website:
 - **URL**: https://rebrickable.com/downloads/
 - **Files needed**: 
@@ -109,7 +110,7 @@ All required datasets can be downloaded from the official Rebrickable website:
   - Sets
   - Themes
 
-## Project Files
+## Project Files 🧱
 This project includes the following file types:
 
 1. **T-SQL Scripts**:
@@ -135,11 +136,11 @@ This project includes the following file types:
 
 These files collectively implement the complete ETL pipeline from source data to analytical reporting.
 
-## Differences Between Fact and Dimension Tables
+## Differences Between Fact and Dimension Tables 🧩
 - **Fact Tables**: Contain measurable, quantitative data (like counts and sums) and foreign keys to dimension tables. In this project, Parts_Fact contains measures like Nr_of_Parts and Nr_of_Children.
 
 - **Dimension Tables**: Contain descriptive attributes used for filtering and grouping. Here, Dim_Color and Dim_Category provide contextual information for the measures in the fact table.
 
-## Stored Procedure and SQL Agent Job
+## Stored Procedure and SQL Agent Job 🧱
 A stored procedure has been created to generate a report counting how many parts of category 'Technic Bricks' are with 'Dark Bluish Gray' color. This procedure is scheduled to run daily at 10:00 AM using SQL Server Agent.
 The SQL Agent job ensures automated execution of the report and can be monitored through SQL Server Management Studio.
