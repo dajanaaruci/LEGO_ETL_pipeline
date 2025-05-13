@@ -123,7 +123,7 @@ This project includes the following file types:
    - ETL transformation logic
    - Python code for database interaction
 
-3. **ETL Loading Scripts Approaches**:
+3. **ETL Loading Scripts Approaches Used**:
    - Direct Approach: Combined table creation and data insertion scripts
    - Phased Approach: Separate scripts for table creation, data insertion, and constraint addition
 
