@@ -59,7 +59,7 @@ Together, these form a **two-tier data architecture** with:
        │                   │                      │
        ▼                   ▼                      ▼
 ┌─────────────┐     ┌─────────────┐     ┌─────────────────────┐
-│ Extraction  │     │Transformation│     │      Loading       │
+│ Extraction  │     │Transformation│    │       Loading       │
 └─────────────┘     └─────────────┘     └─────────────────────┘
 ```
 
