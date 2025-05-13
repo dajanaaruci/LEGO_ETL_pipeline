@@ -120,7 +120,7 @@ This project includes the following file types:
 
 2. **Jupyter Notebooks**:
    - Data cleaning scripts to handle null values without affecting data types
-   - ETL transformation logic
+   - ETL transformation and loading logic
    - Python code for database interaction
 
 3. **ETL Loading Approaches Used**:
